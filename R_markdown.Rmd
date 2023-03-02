@@ -1,0 +1,19 @@
+---
+title: "Branch"
+author: "Sunday Okechukwu"
+date: "2023-03-02"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(dplyr)
+data(diamonds)
+diamonds %>%
+  select(price, color)
+```
+
